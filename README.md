@@ -17,6 +17,7 @@ To compile on Linux, simply clone the repository and run the provided build scri
 ```bash
 git clone https://github.com/RaphaelAsla/SVDImageCompressor.git
 cd SVDImageCompressor
+chmod +x build.sh
 ./build.sh
 ```
 
