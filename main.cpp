@@ -113,7 +113,8 @@ int main(int argc, char* argv[]) {
     const MatrixXd Blue_hat = ComputeApproximation(Blue, k);
 
     Mat A_hat = EigenToMat(Red_hat, Green_hat, Blue_hat);
-    imwrite("assets/compressed_k" + to_string(k) + '_' + image_path, A_hat);
+
+    imwrite("assets/compressed_" + to_string(k) + '_' + image_path.substr(7), A_hat);
     imshow("Approximation", A_hat);
 
     waitKey(0);
