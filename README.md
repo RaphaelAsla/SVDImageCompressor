@@ -32,7 +32,6 @@ Build the project following your IDE's procedure for linking libraries.
 To run the image compressor, use the following command:
 
 ```bash
-Copy code
 ./svd k image
 ```
 
