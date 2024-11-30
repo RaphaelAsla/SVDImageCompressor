@@ -37,5 +37,5 @@ To run the image compressor, use the following command:
 
 Where:
 - k is the number of singular values to retain for the compression (at most the rank of the image matrix).<br>
-A lower k will result in higher compression but more loss of detail, while a higher k will preserve more details at the cost of less compression.
+A lower k will result in higher compression but more loss of detail, while a higher k will preserve more details at the cost of less compression.<br>
 -image is the path to the image you want to compress.
