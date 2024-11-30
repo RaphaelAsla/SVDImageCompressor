@@ -32,17 +32,17 @@ Build the project following your IDE's procedure for linking libraries.
 To run the image compressor, use the following command:
 
 ```bash
-./svd k image
+./svd k assets/image
 ```
 
 Where:
 - k is the number of singular values to retain for the compression (at most the rank of the image matrix).<br>
 A lower k will result in higher compression but more loss of detail, while a higher k will preserve more details at the cost of less compression.<br>
-- image is the path to the image you want to compress.
+- image is the name of the image you want to compress.
 
 ### Example, k = 50
 
-<div style="display: flex; justify-content: center;">
-  <img src="assets/img.jpeg" width="380" height="287" style="margin-right: 20px;">
-  <img src="assets/compressed_50_img.jpg" width="380" height="287">
-</div>
+<p style="display: flex; justify-content: center; align-items: center;">
+  <img src="assets/img.jpg" width="49%" height="287">
+  <img src="assets/compressed_50_img.jpg" width="49%" height="287">
+</p>
