@@ -26,7 +26,7 @@ For Windows, you need to link against the OpenCV 2 libraries (Eigen is header-on
 The exact method depends on your IDE or editor, but here are general steps:
 
 Install Eigen and OpenCV 2.
-Link the OpenCV libraries in your IDE (e.g., Visual Studio, Clion, etc.).
+Link the OpenCV libraries in your IDE (e.g., Visual Studio, Clion, etc.). <br>
 Build the project following your IDE's procedure for linking libraries.
 
 ### Usage
