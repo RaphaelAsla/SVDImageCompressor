@@ -37,10 +37,7 @@ MatrixXd ComputeApproximation(MatrixXd& A, int k) {
     MatrixXd U, V;
     VectorXd eigenvalues;
 
-    const int rows = A.rows();
-    const int cols = A.cols();
-
-    if (rows > cols) {
+    if (A.rows() > A.cols()) {
         EigenSolver<MatrixXd> solver(A.transpose() * A);
         eigenvalues = solver.eigenvalues().real().array();
         V = solver.eigenvectors().real();
@@ -84,8 +81,6 @@ int main(int argc, char* argv[]) {
 
     const int k = stoi(argv[1]);
     string image_path = argv[2];
-
-    cout << "For k = " << k << endl;
 
     Mat image = imread(image_path, IMREAD_COLOR);
     if (image.empty()) {
