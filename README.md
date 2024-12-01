@@ -25,9 +25,9 @@ chmod +x build.sh
 For Windows, you need to link against the OpenCV 2 libraries (Eigen is header-only). <br>
 The exact method depends on your IDE or editor, but here are general steps:
 
-Install Eigen and OpenCV 2.
-Link the OpenCV libraries in your IDE (e.g., Visual Studio, Clion, etc.). <br>
-Build the project following your IDE's procedure for linking libraries.
+Install Eigen and OpenCV 2. <br>
+Link the OpenCV libraries in your IDE (e.g., Visual Studio, CLion, etc.). <br>
+Build the project.
 
 ### Usage
 To run the image compressor, use the following command:
