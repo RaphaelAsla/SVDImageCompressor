@@ -87,7 +87,7 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    vector<Mat> channels(3);
+    std::vector<Mat> channels(3);
     split(image, channels);
 
     MatrixXd Blue(channels[0].rows, channels[0].cols);
