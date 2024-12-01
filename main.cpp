@@ -6,7 +6,6 @@
 #include <opencv2/imgproc.hpp>
 
 using namespace Eigen;
-using namespace std;
 using namespace cv;
 
 MatrixXd ComputeU(const MatrixXd& A, const MatrixXd& V, const VectorXd& eigenvalues_AtA) {
@@ -79,12 +78,12 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    const int k = stoi(argv[1]);
-    string image_path = argv[2];
+    const int k = std::stoi(argv[1]);
+    std::string image_path = argv[2];
 
     Mat image = imread(image_path, IMREAD_COLOR);
     if (image.empty()) {
-        cerr << "Error loading image_path!" << endl;
+        std::cerr << "Error loading image_path!" << std::endl;
         return -1;
     }
 
@@ -109,7 +108,7 @@ int main(int argc, char* argv[]) {
 
     Mat A_hat = EigenToMat(Red_hat, Green_hat, Blue_hat);
 
-    imwrite("assets/compressed_" + to_string(k) + '_' + image_path.substr(7), A_hat);
+    imwrite("assets/compressed_" + std::to_string(k) + '_' + image_path.substr(7), A_hat);
     imshow("Approximation", A_hat);
 
     waitKey(0);
