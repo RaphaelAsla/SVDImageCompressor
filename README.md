@@ -46,4 +46,8 @@ A lower k will result in higher compression but more loss of detail, while a hig
 <p style="display: flex; justify-content: center; align-items: center;">
   <img src="assets/img.jpg" width="49%" height="287">
   <img src="assets/compressed_50_img.jpg" width="49%" height="287">
+  <img src="assets/NeonNewYork.png" width="49%" height="287">
+  <img src="assets/compressed_50_NeonNewYork.png" width="49%" height="287">
 </p>
+
+> **Note:** The result might end up being bigger in size, which is kinda funny, but it's due to OpenCV's compression handling, not my SVD implementation.
