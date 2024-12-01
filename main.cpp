@@ -32,7 +32,7 @@ MatrixXd ComputeSVD(const MatrixXd& U, const MatrixXd& V, const VectorXd& eigenv
     return A_hat;
 }
 
-MatrixXd ComputeApproximation(MatrixXd& A, int k) {
+MatrixXd MakeApproximation(MatrixXd& A, int k) {
     MatrixXd U, V;
     VectorXd eigenvalues;
 
@@ -101,9 +101,9 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    const MatrixXd Red_hat = ComputeApproximation(Red, k);
-    const MatrixXd Green_hat = ComputeApproximation(Green, k);
-    const MatrixXd Blue_hat = ComputeApproximation(Blue, k);
+    const MatrixXd Red_hat = MakeApproximation(Red, k);
+    const MatrixXd Green_hat = MakeApproximation(Green, k);
+    const MatrixXd Blue_hat = MakeApproximation(Blue, k);
 
     Mat A_hat = EigenToMat(Red_hat, Green_hat, Blue_hat);
 
