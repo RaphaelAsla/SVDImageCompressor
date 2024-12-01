@@ -52,7 +52,6 @@ MatrixXd ComputeApproximation(MatrixXd& A, int k) {
 }
 
 Mat EigenToMat(const MatrixXd& Red, const MatrixXd& Green, const MatrixXd& Blue) {
-    // All channels have the same dimensions
     const int rows = Red.rows();
     const int cols = Red.cols();
 
